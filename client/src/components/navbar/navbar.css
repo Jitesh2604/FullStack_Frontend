@@ -1,0 +1,39 @@
+#navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    color: wheat;
+    cursor: pointer;
+}
+.center {
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 20px;
+    color: wheat;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: wheat;
+    cursor: pointer;
+}
+h6 {
+    margin-left: -22px;
+    margin-top: -1px;
+    border: 1px solid transparent;
+    background-color: rgba(150, 79, 230, 0.317);
+    border-radius: 40%;
+    padding: 3px;
+    color: white;
+}

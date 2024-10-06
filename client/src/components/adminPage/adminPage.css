@@ -1,0 +1,115 @@
+/* adminPage.css */
+body {
+    background-color: #f5f5f5;
+}
+.home-container {
+    padding: 20px;
+    height: 100%;
+    /* border: 1px solid red; */
+    /* background-color: #f5f5f5; */
+  }
+  
+  #addNew {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #dc4426;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 85%;
+  }
+  
+  /* .addNewProductForm {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  } */
+  
+  .closeBtn {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    color: black;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+  }
+  .closeBtn:hover {
+    background-color: #dc4426;
+  }
+  
+  .formCart {
+    padding: 20px;
+    margin-left: 60%;
+    width: 20%;
+  }
+  
+  .space-y-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .submitBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submitBtn:hover {
+    background-color: #218838;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  #product-item {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto;
+  }
+  
+  .updateBtn {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .deleteBtn {
+    padding: 10px 15px;
+    background-color: #dc3545;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
