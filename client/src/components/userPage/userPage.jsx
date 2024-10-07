@@ -10,7 +10,7 @@ const UserPage = ({ addToCart }) => {
 
   const fetchProducts = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/products");
+      const { data } = await axios.get(`${import.meta.env.VITE_APP_API_URL}/products`);
       setProducts(data);
       setLoading(false); // Set loading to false once data is fetched
       setError(""); 

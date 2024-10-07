@@ -13,7 +13,7 @@ const AdminPage = () => {
 
   const fetchProduct = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/products");
+      const { data } = await axios.get(`${import.meta.env.VITE_APP_API_URL}/products`);
       setProducts(data);
     } catch (err) {
       setError("Failed to fetch products. Please try again later.");
@@ -38,7 +38,7 @@ const AdminPage = () => {
     try {
       if (editingProductId) {
         const { data } = await axios.put(
-          `http://localhost:8000/api/products/${editingProductId}`,
+          `${import.meta.env.VITE_APP_API_URL}/products/${editingProductId}`,
           productData,
           {
             headers: {
@@ -54,7 +54,7 @@ const AdminPage = () => {
         setEditingProductId(null);
       } else {
         const { data } = await axios.post(
-          "http://localhost:8000/api/products",
+          `${import.meta.env.VITE_APP_API_URL}/products`,
           productData,
           {
             headers: {
@@ -92,7 +92,7 @@ const AdminPage = () => {
 
     try {
       await axios.delete(
-        `http://localhost:8000/api/products/${productId}`,
+        `${import.meta.env.VITE_APP_API_URL}/products/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -13,7 +13,8 @@ const Signin = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8000/api/auth/login", {
+      // console.log(import.meta.env.VITE_APP_API_URL);
+      const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,7 +26,7 @@ const Signin = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to sign in. Please try again.");
+        throw new Error(errorData,"Failed to sign in. Please try again.");
       }
 
       const { token, userRole } = await response.json();
