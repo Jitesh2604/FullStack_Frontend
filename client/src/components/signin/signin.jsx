@@ -68,7 +68,7 @@ const Signin = () => {
               required
             />
           </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {/* {error && <p className="text-red-500 text-sm">{error}</p>} */}
           <button type="submit" className="w-full">
             Sign In
           </button>
